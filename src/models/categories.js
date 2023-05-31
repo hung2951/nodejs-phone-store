@@ -5,13 +5,10 @@ const CategoriesShema = mongoose.Schema({
         type:String,
         require:true
     },
-    categoriesParent:{
-        type:Array,
-    },
     status:{
         type:Boolean,
         default:true
-    }
+    },
     
 },{timestamps:true})
 

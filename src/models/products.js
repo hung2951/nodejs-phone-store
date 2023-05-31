@@ -12,6 +12,13 @@ const ProductShema = mongoose.Schema({
     status:{
         type:Boolean,
         default:true
+    },
+    categoryId:{
+        type: mongoose.ObjectId,
+        ref: "Categories",
+    },
+    slug:{
+        type:String
     }
     
 },{timestamps:true})
